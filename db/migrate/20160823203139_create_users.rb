@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :state
       t.integer :zipcode
       t.integer :phone_number
-      t.references :program, :project, index: true, foreign_key: true
+      t.references index: true, foreign_key: true
     end
   end
 end
