@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
+    if current_user
+      @users = current_user.users
+    else
+      @users = User.all
+    end
   end
 
   def new
