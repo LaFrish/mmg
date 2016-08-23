@@ -1,0 +1,1 @@
+class Program < ActiveRecord::Base
